@@ -1,0 +1,92 @@
+[2020-08-31 16:37:05] local.ERROR: Error: Class 'App\Model\G_news' not found in D:\Code\api.gejia.com\app\Http\Controllers\News\NewsController.php:27
+Stack trace:
+#0 [internal function]: App\Http\Controllers\News\NewsController->__construct(Object(App\Http\Controllers\PublicController))
+#1 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(849): ReflectionClass->newInstanceArgs(Array)
+#2 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(691): Illuminate\Container\Container->build('App\\Http\\Contro...')
+#3 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(637): Illuminate\Container\Container->resolve('App\\Http\\Contro...', Array)
+#4 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Application.php(300): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#5 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(321): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#6 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(279): Laravel\Lumen\Application->callControllerAction(Array)
+#7 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(264): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#8 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(166): Laravel\Lumen\Application->handleFoundRoute(Array)
+#9 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(426): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#10 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(172): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#11 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(109): Laravel\Lumen\Application->dispatch(NULL)
+#12 D:\Code\api.gejia.com\public\index.php(28): Laravel\Lumen\Application->run()
+#13 {main} {"exception":"[object] (Error(code: 0): Class 'App\\Model\\G_news' not found at D:\\Code\\api.gejia.com\\app\\Http\\Controllers\\News\\NewsController.php:27)
+[stacktrace]
+#0 [internal function]: App\\Http\\Controllers\\News\\NewsController->__construct(Object(App\\Http\\Controllers\\PublicController))
+#1 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(849): ReflectionClass->newInstanceArgs(Array)
+#2 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(691): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#3 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(637): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#4 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Application.php(300): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#5 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(321): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#6 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#7 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#8 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#9 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#10 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#11 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#12 D:\\Code\\api.gejia.com\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#13 {main}
+"} 
+[2020-08-31 16:48:24] local.ERROR: ReflectionException: Class App\Http\Controllers\Contact\ContactController does not exist in D:\Code\api.gejia.com\vendor\illuminate\container\Container.php:809
+Stack trace:
+#0 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(809): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(691): Illuminate\Container\Container->build('App\\Http\\Contro...')
+#2 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(637): Illuminate\Container\Container->resolve('App\\Http\\Contro...', Array)
+#3 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Application.php(300): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#4 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(321): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#5 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(279): Laravel\Lumen\Application->callControllerAction(Array)
+#6 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(264): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#7 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(166): Laravel\Lumen\Application->handleFoundRoute(Array)
+#8 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(426): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#9 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(172): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#10 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(109): Laravel\Lumen\Application->dispatch(NULL)
+#11 D:\Code\api.gejia.com\public\index.php(28): Laravel\Lumen\Application->run()
+#12 {main}
+
+Next Illuminate\Contracts\Container\BindingResolutionException: Target class [App\Http\Controllers\Contact\ContactController] does not exist. in D:\Code\api.gejia.com\vendor\illuminate\container\Container.php:811
+Stack trace:
+#0 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(691): Illuminate\Container\Container->build('App\\Http\\Contro...')
+#1 D:\Code\api.gejia.com\vendor\illuminate\container\Container.php(637): Illuminate\Container\Container->resolve('App\\Http\\Contro...', Array)
+#2 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Application.php(300): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(321): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(279): Laravel\Lumen\Application->callControllerAction(Array)
+#5 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(264): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(166): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(426): Laravel\Lumen\Application->Laravel\Lumen\Concerns\{closure}(Object(Laravel\Lumen\Http\Request))
+#8 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(172): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 D:\Code\api.gejia.com\vendor\laravel\lumen-framework\src\Concerns\RoutesRequests.php(109): Laravel\Lumen\Application->dispatch(NULL)
+#10 D:\Code\api.gejia.com\public\index.php(28): Laravel\Lumen\Application->run()
+#11 {main} {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [App\\Http\\Controllers\\Contact\\ContactController] does not exist. at D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php:811)
+[stacktrace]
+#0 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(691): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#1 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(637): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#2 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Application.php(300): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#3 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(321): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#4 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#5 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#6 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#7 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#8 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#9 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#10 D:\\Code\\api.gejia.com\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#11 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class App\\Http\\Controllers\\Contact\\ContactController does not exist at D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php:809)
+[stacktrace]
+#0 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(809): ReflectionClass->__construct('App\\\\Http\\\\Contro...')
+#1 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(691): Illuminate\\Container\\Container->build('App\\\\Http\\\\Contro...')
+#2 D:\\Code\\api.gejia.com\\vendor\\illuminate\\container\\Container.php(637): Illuminate\\Container\\Container->resolve('App\\\\Http\\\\Contro...', Array)
+#3 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Application.php(300): Illuminate\\Container\\Container->make('App\\\\Http\\\\Contro...', Array)
+#4 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(321): Laravel\\Lumen\\Application->make('App\\\\Http\\\\Contro...')
+#5 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#6 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#7 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#8 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#10 D:\\Code\\api.gejia.com\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#11 D:\\Code\\api.gejia.com\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#12 {main}
+"} 
