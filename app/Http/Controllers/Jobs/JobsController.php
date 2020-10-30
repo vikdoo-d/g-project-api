@@ -77,7 +77,7 @@ class JobsController extends Controller
         }
         try{
             $data = $this->jobs->offset($this->limit*$this->page)->limit($this->limit)
-                ->orderBy('created_at','asc')->get(['id','job_name','job_dept','job_at','job_des','job_needs','job_submit','job_status','created_at'])
+                ->orderBy('created_at','asc')->get(['id','job_name','job_dept','job_at','job_des','job_salary','job_submit','job_status','created_at'])
                 ->toArray();
 
             foreach($data as &$value) {
@@ -127,6 +127,10 @@ class JobsController extends Controller
         {
             return self::ShowError(ErrorDefine::INVALID_PARAMS);
         }
+        if(empty($request->input('job_salary')) || !$request->has('job_salary'))
+        {
+            return self::ShowError(ErrorDefine::INVALID_PARAMS);
+        }
         if(empty($request->input('job_num')) || !$request->has('job_num'))
         {
             return self::ShowError(ErrorDefine::INVALID_PARAMS);
@@ -161,7 +165,7 @@ class JobsController extends Controller
         $job_num = $request->input('job_num');
         $job_dept = $request->input('job_dept');
         $job_des = $request->input('job_des');
-        $job_needs = $request->input('job_needs');
+        $job_salary = $request->input('job_salary');
         $job_submit = $request->input('job_submit');
         $created_at = date('Y-m-d');
 
@@ -171,7 +175,7 @@ class JobsController extends Controller
             'job_dept'=>$job_dept,
             'job_at'=>$job_at,
             'job_des' =>$job_des,
-            'job_needs'=>$job_needs,
+            'job_salary'=>$job_salary,
             'job_status'=>$job_status,
             'job_submit'=>$job_submit,
             'created_at' =>$created_at
@@ -271,8 +275,8 @@ class JobsController extends Controller
             $jobs->job_des = $request->input('job_des');
         }
 
-        if(!empty($request->input('job_needs')) && $request->has('job_needs')){
-            $jobs->job_needs = $request->input('job_needs');
+        if(!empty($request->input('job_salary')) && $request->has('job_salary')){
+            $jobs->job_salary = $request->input('job_salary');
         }
         try{
 
@@ -371,7 +375,7 @@ class JobsController extends Controller
         }
         try{
             // $data = $this->jobs->find($id)
-            //         ->get(['id','job_name','job_dept','job_at','job_num','job_des','job_needs','job_submit','job_status','created_at']);
+            //         ->get(['id','job_name','job_dept','job_at','job_num','job_des','job_salary','job_submit','job_status','created_at']);
             $data = G_jobs::where('id', $id)->first();
             $data->page_view += 1;
             $data->save();
